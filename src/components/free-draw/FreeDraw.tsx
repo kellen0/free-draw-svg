@@ -6,7 +6,6 @@ const styleSheet: any = {
   width: '100vw',
   height: '100vh',
   position: 'fixed',
-  zIndex: 9999,
   top: 0,
   left: 0,
   touchAction: 'none',
@@ -17,6 +16,7 @@ const FreeDraw = (props: FreeDrawProps) => {
     strokeColor = '#000',
     strokeWidth = 3,
     backgroundColor = 'transparent',
+    zIndex = 9999,
     onDrawStart,
     onDrawMove,
     onDrawEnd,
@@ -50,6 +50,7 @@ const FreeDraw = (props: FreeDrawProps) => {
     <svg
       style={{
         ...styleSheet,
+        zIndex: zIndex !== undefined ? zIndex : 9999,
         backgroundColor,
       }}
       onTouchStart={handleMouseDown}

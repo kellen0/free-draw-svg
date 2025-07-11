@@ -59,7 +59,8 @@ setTimeout(() => {
 | strokeColor | 线条颜色 | _string_ | `#000` |
 | strokeWidth | 线条宽度 | _number_ | `3` |
 | backgroundColor | 背景颜色 | _string_ | `transparent` |
-| teleport | 指定挂载的节点 | _HTMLElement\|(() => HTMLElement)_ | - |
+| zIndex | 指定层级 | _number_ | `9999` |
+| teleport | 指定挂载的节点 | _HTMLElement\|(() => HTMLElement)_ | body |
 
 ### Events
 

@@ -13,6 +13,8 @@ export interface FreeDrawProps {
   onDrawMove?: (e?: TouchEvent<SVGSVGElement>) => void;
   /** 结束绘制事件 */
   onDrawEnd?: (e?: TouchEvent<SVGSVGElement>, clientRect?: DOMRect) => void;
+  /** 层级 */
+  zIndex?: number;
   /** 挂载父容器 */
   teleport?: HTMLElement | (() => HTMLElement);
 }
